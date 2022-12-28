@@ -64,6 +64,19 @@ header {
             justify-content: space-between;
             // background-color: green;
             width: 100%;
+
+            h1{
+                margin-right: auto;
+            }
+
+            span:first-of-type{
+                margin-right: 1rem;
+                display: block;
+                max-width: 8rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-weight: 400;
+            }
         }
     }
     input {
