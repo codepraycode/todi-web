@@ -149,8 +149,6 @@ section.authentication{
     width: 100%;
     height: 100%;
 
-    background-color: hsl(235, 24%, 19%, .7);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,13 +158,7 @@ section.authentication{
     transition-duration: 0s;
 
     .authentication__content{
-        
         transform: translateY(-250%);
-
-        background-color: $very-dark-gray;
-        border-color: $very-dark-grayish-blue--dark-mode;
-        color: $light-grayish-blue--dark-mode;
-
         border-radius: .3rem;
 
         width: 450px;
@@ -182,7 +174,6 @@ section.authentication{
             top: 10%;
             right: 10%;
             transform: rotate(45deg);
-            color: $dark-grayish-blue;
             cursor: pointer;
             user-select: none;
         }
@@ -223,18 +214,9 @@ section.authentication{
     }
 }
 
-@keyframes showModal {
-    from{
-        display: flex;
-    }
-    to{
-        visibility: visible;
-    }
-}
-
 .form_group{
     margin: 15px 0;
-    background-color: $very-dark-desaturated-blue;
+    
     
     width: 100%;
     max-width: 100%;
@@ -254,6 +236,7 @@ section.authentication{
         padding-top: 2rem;
         width: 100% !important;
         height: 100%;
+        z-index: 2;
     }
     label{
         position: absolute;
@@ -261,6 +244,7 @@ section.authentication{
         left: 10px;
         transform: translateY(17px);
         transition: all .5s ease;
+        z-index: 1;
     }
 
     &:focus-within > label,

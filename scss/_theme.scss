@@ -75,6 +75,27 @@ body {
             background-color: $very-dark-grayish-blue;
         }
     }
+
+    section.authentication {
+
+        background-color: hsl(236, 9%, 61%, .7);
+
+        .authentication__content {
+
+            background-color: $very-light-gray;
+            border-color: $light-grayish-blue;
+            color: $very-dark-grayish-blue;
+
+            #closeModal {
+                color: $dark-grayish-blue;
+            }
+        }
+    }
+
+    .form_group {
+
+        background-color: $very-light-grayish-blue;
+    }
 }
 
 // dark mode
@@ -151,6 +172,27 @@ body[data-theme="dark"] {
 
     footer {
         color: $dark-grayish-blue--dark-mode;
+    }
+
+    section.authentication {
+
+        background-color: hsl(235, 24%, 19%, .7);
+
+        .authentication__content {
+
+            background-color: $very-dark-gray;
+            border-color: $very-dark-grayish-blue--dark-mode;
+            color: $light-grayish-blue--dark-mode;
+
+            #closeModal {
+                color: $dark-grayish-blue;
+            }
+        }
+    }
+
+    .form_group {
+        
+        background-color: $very-dark-desaturated-blue;
     }
 }
 
