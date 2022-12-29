@@ -196,6 +196,11 @@ body[data-theme="dark"] {
     .form_group {
         
         background-color: $very-dark-desaturated-blue;
+        // color: darken($color: inherit, $amount: 20%);
+        &:focus-within>label,
+        input:not(:placeholder-shown)+label {
+            color: lighten($very-dark-grayish-blue, 20%); //darken($color: $light-grayish-blue--dark-mode, $amount: 25%);
+        }
     }
 }
 
