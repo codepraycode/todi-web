@@ -2,7 +2,8 @@ $mobile--breakpoint:800px;
 // Primary Colors
 $bright-blue: hsl(220, 98%, 61%);
 // Checkbox
-$checkbox-background: linear-gradient( hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+$checkbox-background: linear-gradient( hsl(192, 100%, 67%), hsla(280, 87%, 65%, 0.349));
+$checkbox-background-opaque: linear-gradient( hsl(192, 100%, 67%, .4), hsla(280, 87%, 65%, 0.2));
 $shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 // Neutral Colors
 // Light Theme
