@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: $font-fm;
     // 
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 
 :root {
@@ -76,6 +76,11 @@ header {
                 text-overflow: ellipsis;
                 overflow: hidden;
                 font-weight: 400;
+
+                color: inherit;
+                a{
+                    color: inherit;
+                }
             }
         }
     }
