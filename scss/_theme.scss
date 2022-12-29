@@ -17,13 +17,14 @@ body {
             // font-weight: $fw-700;
         }
     }
+    input {
+        color: $very-dark-grayish-blue;
+    }
     header {
         //
         background-image: url('/images/bg-desktop-light.jpg');
         color: $white;
-        input {
-            color: $very-dark-grayish-blue;
-        }
+        
         #theme-cog {
             background-image: url('/images/icon-moon.svg');
         }
@@ -64,16 +65,14 @@ body {
         }
     }
 
-    .task-error{
+    button {
+        border-color: $very-dark-grayish-blue--dark-mode;
 
-        button{
-            border-color: $very-dark-grayish-blue--dark-mode;
+        background-color: darken($very-dark-grayish-blue, 5%);
+        color: $very-light-gray;
 
-            background-color: darken($very-dark-grayish-blue, 5%);
-            color: $very-light-gray;
-            &:hover{
-                background-color: $very-dark-grayish-blue;
-            }
+        &:hover {
+            background-color: $very-dark-grayish-blue;
         }
     }
 }
@@ -99,6 +98,19 @@ body[data-theme="dark"] {
             background-image: url('/images/icon-sun.svg');
         }
     }
+
+    button {
+        border-color: $very-dark-grayish-blue-alt--dark-mode;
+
+        background-color: $very-dark-grayish-blue-alt--dark-mode;
+
+        color: inherit;
+
+        &:hover {
+            background-color: $very-dark-grayish-blue--dark-mode;
+        }
+    }
+
     .task {
         background-color: $very-dark-desaturated-blue;
         border-color: $very-dark-grayish-blue--dark-mode;
@@ -117,9 +129,7 @@ body[data-theme="dark"] {
         & .checker {
             border-color: $very-dark-grayish-blue-alt--dark-mode;
         }
-        input {
-            color: inherit;
-        }
+        
         p {
             color: inherit;
         }
@@ -129,28 +139,16 @@ body[data-theme="dark"] {
             }
         }
     }
+    input {
+        color: inherit;
+    }
     .task-items {
         background-color: $very-dark-desaturated-blue;
     }
     .task__actions {
         color: $dark-grayish-blue--dark-mode;
     }
-    .task-error {
 
-        // color: $light-grayish-blue--dark-mode;
-
-        button {
-            border-color: $very-dark-grayish-blue-alt--dark-mode;
-
-            background-color: $very-dark-grayish-blue-alt--dark-mode;
-
-            color: inherit;
-
-            &:hover {
-                background-color: $very-dark-grayish-blue--dark-mode;
-            }
-        }
-    }
     footer {
         color: $dark-grayish-blue--dark-mode;
     }

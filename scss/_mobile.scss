@@ -1,7 +1,7 @@
 @use './variables' as *;
 @media screen and (max-width:$mobile--breakpoint) {
     section {
-        margin: 0 2rem !important;
+        margin: 0 2rem;
     }
     header {
         height: 36vh;
