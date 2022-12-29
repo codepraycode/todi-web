@@ -281,11 +281,8 @@ h1 {
         &.loading{
 
             p{
-                background: $very-dark-grayish-blue;
-                background: linear-gradient(110deg, 
-                    $very-dark-grayish-blue-alt--dark-mode 8%,
-                    $very-dark-grayish-blue--dark-mode 33%);
-                background-size: 200% 100%;
+
+                // background-size: 200% 100%;
                 
                 animation: 1.9s tasksShimmer linear infinite;
                 width: 80%;

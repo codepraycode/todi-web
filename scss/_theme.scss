@@ -42,6 +42,17 @@ body {
     .task__group {
         .task {
             border-color: $very-light-grayish-blue;
+
+            &.loading {
+                p {
+                    background: $very-light-grayish-blue;
+                    background: linear-gradient(110deg,
+                            darken($very-light-gray, 10%) 8%,
+                            $light-grayish-blue 33%);
+                        background-size: 200% 100%;
+                }
+            }
+
             p {
                 color: $very-dark-grayish-blue;
             }
@@ -92,6 +103,17 @@ body[data-theme="dark"] {
         background-color: $very-dark-desaturated-blue;
         border-color: $very-dark-grayish-blue--dark-mode;
         color: $light-grayish-blue--dark-mode;
+
+        &.loading {
+            p {
+                background: $very-dark-grayish-blue;
+                background: linear-gradient(110deg,
+                        lighten($very-dark-grayish-blue-alt--dark-mode, 7%) 8%,
+                        $very-dark-grayish-blue--dark-mode 33%);
+                background-size: 200% 100%;
+            }
+        }
+
         & .checker {
             border-color: $very-dark-grayish-blue-alt--dark-mode;
         }
