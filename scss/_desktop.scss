@@ -154,8 +154,15 @@ section.authentication{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+
+    transition-duration: 0s;
 
     .authentication__content{
+        
+        transform: translateY(-250%);
+
         background-color: $very-dark-gray;
         border-color: $very-dark-grayish-blue--dark-mode;
         color: $light-grayish-blue--dark-mode;
@@ -166,6 +173,19 @@ section.authentication{
         max-width: 90%;
 
         padding: 2rem;
+
+        position: relative;
+
+        #closeModal {
+            font-size: 2.3rem;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            transform: rotate(45deg);
+            color: $dark-grayish-blue;
+            cursor: pointer;
+            user-select: none;
+        }
 
         button{
             display: block;
@@ -193,18 +213,22 @@ section.authentication{
 
     }
 
-    &:not([data-show="false"]){
-        visibility: hidden;
-        .authentication__content{
-            transform: translateY(-1000%);
-        }
-    }
-    &[data-show="true"]{
-        visibility: visible;
+    &[data-show="true"] {
         
+        visibility: visible;
+
         .authentication__content {
             transform: translateY(0%);
         }
+    }
+}
+
+@keyframes showModal {
+    from{
+        display: flex;
+    }
+    to{
+        visibility: visible;
     }
 }
 
