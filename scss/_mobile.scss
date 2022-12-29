@@ -68,7 +68,14 @@
             }
             .attribution {
                 margin-top: 1.5rem;
-                font-size: .55rem;
+
+                span {
+                        margin-right: 6px;
+                
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+                    }
             }
         }
     }
