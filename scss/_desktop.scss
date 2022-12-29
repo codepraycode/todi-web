@@ -195,6 +195,47 @@ h1 {
 }
 
 
+.task-error{
+    // background-color: red;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    row-gap: 30px;
+
+    p{
+        color: inherit;
+        font-weight: bold;
+    }
+
+    button{
+        width: 130px;
+        padding-block: .7rem;
+
+        // border: 1px solid $very-dark-grayish-blue-alt--dark-mode;
+        border-width: 1px;
+        border-style: solid;
+
+        border-radius: .3rem;
+
+        // background-color: $very-dark-grayish-blue-alt--dark-mode;
+
+        // color: $light-grayish-blue--dark-mode;
+
+        cursor: pointer;
+        color: inherit;
+        
+
+        // &:hover{
+        //     background-color: $very-dark-grayish-blue--dark-mode;
+        // }
+    }
+}
+
+
 @keyframes oscillate {
     0%{
         visibility: visible;
