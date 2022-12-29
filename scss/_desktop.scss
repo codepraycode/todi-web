@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: $font-fm;
     // 
-    transition: all 1s ease;
+    transition: all .5s ease;
 }
 
 :root {
@@ -39,26 +39,18 @@ h1 {
 }
 
  button {
-     width: 130px;
-     padding-block: .7rem;
+     width: 150px;
+     max-width: 70%;
 
-     // border: 1px solid $very-dark-grayish-blue-alt--dark-mode;
+     padding-block: .9rem;
+
      border-width: 1px;
      border-style: solid;
 
      border-radius: .3rem;
 
-     // background-color: $very-dark-grayish-blue-alt--dark-mode;
-
-     // color: $light-grayish-blue--dark-mode;
-
      cursor: pointer;
      color: inherit;
-
-
-     // &:hover{
-     //     background-color: $very-dark-grayish-blue--dark-mode;
-     // }
  }
 
 input {

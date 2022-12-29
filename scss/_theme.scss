@@ -66,9 +66,9 @@ body {
     }
 
     button {
-        border-color: $very-dark-grayish-blue--dark-mode;
+        border-color: $very-dark-grayish-blue;
 
-        background-color: darken($very-dark-grayish-blue, 5%);
+        background-color: darken($very-dark-grayish-blue, 20%);
         color: $very-light-gray;
 
         &:hover {
@@ -123,12 +123,15 @@ body[data-theme="dark"] {
     button {
         border-color: $very-dark-grayish-blue-alt--dark-mode;
 
-        background-color: $very-dark-grayish-blue-alt--dark-mode;
+        background-color: $very-dark-desaturated-blue;
+
 
         color: inherit;
 
+        transition-duration: .2s;
+
         &:hover {
-            background-color: $very-dark-grayish-blue--dark-mode;
+            background-color: lighten($very-dark-desaturated-blue, 10%);
         }
     }
 
