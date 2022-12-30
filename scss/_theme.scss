@@ -2,7 +2,7 @@
 // light mode
 body {
     background-color: $very-light-gray;
-    color: $light-grayish-blue;
+    color: $dark-grayish-blue;//$light-grayish-blue;
     a {
         &:active,
         &.active {
@@ -33,7 +33,9 @@ body {
         background-color: $white;
         & .checker {
             border-color: $light-grayish-blue;
-            ;
+        }
+        .platform{
+            color: $dark-grayish-blue;
         }
     }
     .task-items {
@@ -138,7 +140,7 @@ body[data-theme="dark"] {
     .task {
         background-color: $very-dark-desaturated-blue;
         border-color: $very-dark-grayish-blue--dark-mode;
-        color: $light-grayish-blue--dark-mode;
+        color: inherit;
 
         &.loading {
             p {

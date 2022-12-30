@@ -291,6 +291,12 @@ form{
         border-style: solid;
         border-radius: 50%;
     }
+    .platform {
+        font-size: .75rem;
+        position: absolute;
+        right: 15px;
+        top: 8px;        
+    }
 }
 
 .task-items {
@@ -396,6 +402,7 @@ form{
             cursor: pointer;
             max-width: 75%;
         }
+        
         // 
         & .checker {
             cursor: pointer;
@@ -419,6 +426,9 @@ form{
             background-size: contain;
             visibility: hidden;
             z-index: 2;
+
+            position: relative;
+                bottom: -4px;
         }
         &[data-completed="true"] {
             p {

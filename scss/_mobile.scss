@@ -19,6 +19,12 @@
         & .checker {
             margin-right: 1rem;
         }
+        //
+        .platform {
+            font-size: .65rem;
+            right: 10px;
+            top: 5px;
+        }
     }
     .task__group {
         .task {
@@ -35,6 +41,8 @@
             }
             & .canceler {
                 margin-right: .1rem;
+                width: 12px;
+                height: 12px;
             }
         }
     }
@@ -68,14 +76,11 @@
             }
             .attribution {
                 margin-top: 1.5rem;
-
+                flex-direction: column;
+                gap: 10px;
                 span {
-                        margin-right: 6px;
-                
-                        &:last-of-type {
-                            margin-right: 0;
-                        }
-                    }
+                    margin-right: 0px;
+                }
             }
         }
     }
